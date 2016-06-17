@@ -1,2 +1,5 @@
-# Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions
-Display Override PropertyList File Parser and Generator with HiDPI Support For Scaled Resolutions on macOS
+# Display Override PropertyList File Parser and Generator with HiDPI Support 
+## To Enable Scaled Resolutions on macOS
+
+
+[GO TO PAGE](#)

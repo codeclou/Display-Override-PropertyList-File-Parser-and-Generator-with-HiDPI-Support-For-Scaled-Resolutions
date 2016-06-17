@@ -1,0 +1,27 @@
+.xmlValid, .xmlInvalid {
+    font-weight: bold;
+    color:#fff;
+    padding:8px;
+    background-color: rgb(155, 209, 0);
+}
+.xmlInvalid {
+    background-color: #bf1101;
+}
+.buttonBarFooter {
+    margin-top:15px;
+}
+.resetButton, .downloadButton {
+    border: 1px solid #1e9fcc;
+    color: #1e9fcc;
+    padding:8px;
+    cursor: pointer;
+}
+
+.resetButton:hover, .downloadButton:hover {
+    text-decoration: none;
+    color:#fff;
+    background-color: #1e9fcc;
+}
+.downloadNote {
+    color:#ccc;
+}

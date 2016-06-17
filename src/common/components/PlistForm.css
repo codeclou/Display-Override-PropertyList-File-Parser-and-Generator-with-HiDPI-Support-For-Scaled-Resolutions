@@ -1,0 +1,58 @@
+.filename {
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    color: rgb(230, 120, 0);
+    font-weight: 400;
+    font-size:16px;
+    font-family: 'Source Code Pro';
+}
+.field {
+    width:100%;
+    padding:3px;
+    margin:5px;
+    border:0px;
+    background-color:#efefef;
+}
+
+.hexField {
+    font-family: 'Source Code Pro';
+    width:50px;
+    border:0px;
+    background-color:#efefef;
+}
+
+.hexColumn {
+    font-family: 'Source Code Pro';
+}
+.resolutionListTd {
+    padding:0 !important;
+}
+.resolutionList {
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+
+.resolutionListItem {
+    padding:10px;
+    border-bottom:1px solid #eceeef;
+}
+.resolutionField {
+    font-family: 'Source Code Pro';
+    width:100px;
+    border:0px;
+    background-color:#efefef;
+}
+.resolutionButton {
+    border: 1px solid #1e9fcc;
+    color: #1e9fcc;
+    padding:8px;
+    cursor: pointer;
+}
+
+.resolutionButton:hover {
+    text-decoration: none;
+    color:#fff;
+    background-color: #1e9fcc;
+}

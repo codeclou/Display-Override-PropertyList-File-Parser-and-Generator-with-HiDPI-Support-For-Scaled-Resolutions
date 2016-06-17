@@ -1,0 +1,74 @@
+/* ReactCodeMirror overrides */
+.ReactCodeMirror { height:100% !important; border:1px solid #efefef; }
+.CodeMirror { height:100% !important; }
+
+/* bootstrap overrides */
+code {
+    color: rgb(230, 120, 0);
+    font-family: 'Source Code Pro';
+}
+
+/* cs Styles */
+body {
+    background-color: #555;
+}
+.cs-header {
+    padding: 30px;
+    background-color: #1e9fcc;
+    color:#fff;
+}
+.cs-header__h1 {
+    font-family: Roboto,sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 0;
+    margin-top: 0;
+    white-space: nowrap;
+}
+.cs-header__star {
+    float:right;
+}
+.cs-header__starlink {
+    color:#fff;
+    border:1px solid #fff;
+    padding:10px;
+}
+.cs-header__starlink:hover {
+    color:#1e9fcc;
+    text-decoration: none;
+    background-color: #fff;
+}
+.cs-header__h2 {
+    margin-top: 10px;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-weight: 300;
+    white-space: nowrap;
+}
+.cs-header__logo {
+    width:150px;
+    float:left;
+    margin-right:30px;
+}
+.cs-body {
+    padding:0px 30px 300px 30px;
+    background-color: #fff;
+}
+.cs-footer {
+    padding: 50px 30px 50px 30px;
+    background-color: #555;
+    color: #fff;
+    text-align:center;
+}
+.cs-footer a {
+    color:#fff;
+}
+.cs-footer a:hover {
+    color:#efefef;
+}
+.cs-footer__privacy {
+    padding:5px 30px 0px 30px;
+    font-size:13px;
+    line-height:16px;
+    text-align: justify;
+    display: inline-block;
+}
