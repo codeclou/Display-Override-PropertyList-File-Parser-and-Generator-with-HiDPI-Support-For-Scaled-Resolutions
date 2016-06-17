@@ -2,7 +2,7 @@
     -ms-word-break: break-all;
     word-break: break-all;
     word-break: break-word;
-    color: rgb(230, 120, 0);
+    color:#555;
     font-weight: 400;
     font-size:16px;
     font-family: 'Source Code Pro';
@@ -45,14 +45,23 @@
     background-color:#efefef;
 }
 .resolutionButton {
+    display:inline-block;
     border: 1px solid #1e9fcc;
     color: #1e9fcc;
-    padding:8px;
+    padding:4px 8px 4px 8px;
     cursor: pointer;
 }
-
+.resolutionButtonRemove {
+    margin-left:20px;
+}
 .resolutionButton:hover {
     text-decoration: none;
     color:#fff;
     background-color: #1e9fcc;
+}
+.hexCode {
+    display:inline-block;
+    margin-top:10px;
+    color:#555;
+    background-color: #fff;
 }

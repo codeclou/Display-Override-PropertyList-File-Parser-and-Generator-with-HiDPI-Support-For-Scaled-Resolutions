@@ -68,13 +68,18 @@ class PlistForm extends React.Component {
     if (event.target.name === 'decimal_hidpi') {
       scaleResolution.decimal.hidpi = event.target.checked;
     }
-    newState[index] = {
-      base64String: this.xmlParser.generateBase64String(scaleResolution.decimal),
-      decoded: this.xmlParser.generateDecodedScaleResolutionObject(scaleResolution.decimal),
-      decimal: this.encHelp.deepCopyOrReturnEmptyObject(scaleResolution.decimal),
-    };
-    this.setState({ scaleResolutions: newState });
-    setTimeout(() => (this.props.handleChange(this.state)), 300);
+    try {
+      const base64String = this.xmlParser.generateBase64String(scaleResolution.decimal);
+      newState[index] = {
+        base64String,
+        decoded: this.xmlParser.generateDecodedScaleResolutionObject(scaleResolution.decimal, base64String),
+        decimal: this.encHelp.deepCopyOrReturnEmptyObject(scaleResolution.decimal),
+      };
+      this.setState({ scaleResolutions: newState });
+      setTimeout(() => (this.props.handleChange(this.state)), 300);
+    } catch (err) {
+      alertify.error(`Invalid Input. ${err}`);
+    }
   }
 
   handleInputChange(event) {
@@ -150,13 +155,14 @@ class PlistForm extends React.Component {
             data-index={scaleResolutionIndex}
             checked={scaleResolution.decimal.hidpi}
           />
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <a
-            className={plistStyles.resolutionButton}
+            className={classNames(plistStyles.resolutionButton, plistStyles.resolutionButtonRemove)}
             onClick={() => (this.deleteResolution(scaleResolutionIndex))}
           >
             <i className="fa fa-minus-square" aria-hidden="true"></i> remove
           </a>
+          <br />
+          <code className={plistStyles.hexCode}>&lt;{scaleResolution.decoded.hexStringSpaced}&gt;</code>
         </li>
       );
     });

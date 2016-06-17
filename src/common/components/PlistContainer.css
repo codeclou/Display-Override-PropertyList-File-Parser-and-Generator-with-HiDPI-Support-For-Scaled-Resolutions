@@ -11,6 +11,7 @@
     margin-top:15px;
 }
 .resetButton, .downloadButton {
+    display:inline-block;
     border: 1px solid #1e9fcc;
     color: #1e9fcc;
     padding:8px;
