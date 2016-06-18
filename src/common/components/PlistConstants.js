@@ -15,11 +15,15 @@ const plistConstants = {
   <integer>4268</integer>
   <key>scale-resolutions</key>
   <array>
-    <data>AAAKAAAABaA=</data>
-    <data>AAAKAAAABaAAAAAB</data>
-    <data>AAAUAAAAC0A=</data>
-    <data>AAAUAAAAC0AAAAAB</data>
-    <data>AAAFAAAAAtAAAAAB</data>
+    <data>AAAKAAAABaAAAAABACAAAA==</data>
+    <data>AAAFAAAAAtAAAAABACAAAA==</data>
+    <data>AAAPAAAACHAAAAABACAAAA==</data>
+    <data>AAAHgAAABDgAAAABACAAAA==</data>
+    <data>AAAMgAAABwgAAAABACAAAA==</data>
+    <data>AAAGQAAAA4QAAAABACAAAA==</data>
+    <data>AAAKAgAABaAAAAABACAAAA==</data>
+    <data>AAAKrAAABgAAAAABACAAAA==</data>
+    <data>AAAFVgAAAwAAAAABACAAAA==</data>
   </array>
 </dict>
 </plist>`,
