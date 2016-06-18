@@ -31,7 +31,7 @@ const plistConstants = {
     base64String: 'AAAFAAAAAtAAAAAB',
     decoded: {
       decimalStringSpaced: '1280 720 1',
-      hexStringSpaced: '00000500 000002d0 00000001',
+      hexStringSpaced: '00000500 000002d0 00000001 00200000',
     },
     decimal: {
       width: '1280',

@@ -30,6 +30,7 @@ export default class XmlParser {
     hexString.push(this.encHelp.intToHexPrefixedWithZerosTo8Bit(decimalScaleResolutionObject.height));
     if (decimalScaleResolutionObject.hidpi === true) {
       hexString.push(this.encHelp.intToHexPrefixedWithZerosTo8Bit(1));
+      hexString.push(this.encHelp.intToHexPrefixedWithZerosTo8Bit(2097152));
     }
     const joinedHexString = hexString.join('');
     return this.encHelp.hexToBase64(joinedHexString);
