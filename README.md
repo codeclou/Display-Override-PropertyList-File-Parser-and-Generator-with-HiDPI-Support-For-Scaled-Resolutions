@@ -2,6 +2,10 @@
 
 
 
-----
+-----
 
-[Licensed under the MIT License](./LICENSE.md)
+&nbsp;
+
+### License
+
+[MIT](./LICENSE) © [Bernhard Grünewaldt](https://github.com/clouless)
