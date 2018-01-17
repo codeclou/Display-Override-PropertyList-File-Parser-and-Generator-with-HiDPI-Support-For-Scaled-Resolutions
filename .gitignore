@@ -20,3 +20,4 @@ node_modules
 .lock-wscript
 
 .idea
+yarn.lock
