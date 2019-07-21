@@ -2,7 +2,7 @@
 
 for your MacBooks external monitor. Display Override PropertyList File Parser and Generator with HiDPI Support on macOS.
 
-[![](https://comsysto.github.io/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions//assets/images/github-product-logo-scaled-resolutions.png)](https://comsysto.github.io/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/)
+[![](./assets/images/github-product-logo-scaled-resolutions.png)](https://comsysto.github.io/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/)
 
 
 
