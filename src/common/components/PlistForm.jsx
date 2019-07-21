@@ -122,117 +122,154 @@ class PlistForm extends React.Component {
     let scaleResolutions = [];
     this.state.scaleResolutions.forEach((scaleResolution, scaleResolutionIndex) => {
       scaleResolutions.push(
-        <li
+        <div
           key={scaleResolutionIndex}
           className={classNames(plistStyles.resolutionListItem)}
         >
-          <input
-            className={classNames(plistStyles.resolutionField)}
-            type="text"
-            name="decimal_width"
-            value={scaleResolution.decimal.width}
-            onChange={this.handleResolutionInputChange}
-            data-index={scaleResolutionIndex}
-          />
-          &nbsp;
-          x
-          &nbsp;
-          <input
-            className={classNames(plistStyles.resolutionField)}
-            type="text"
-            name="decimal_height"
-            value={scaleResolution.decimal.height}
-            onChange={this.handleResolutionInputChange}
-            data-index={scaleResolutionIndex}
-          />
-          &nbsp;
-          hidpi
-          &nbsp;
-          <input
-            type="checkbox"
-            name="decimal_hidpi"
-            onChange={this.handleResolutionInputChange}
-            data-index={scaleResolutionIndex}
-            checked={scaleResolution.decimal.hidpi}
-          />
-          <a
-            className={classNames(plistStyles.resolutionButton, plistStyles.resolutionButtonRemove)}
-            onClick={() => (this.deleteResolution(scaleResolutionIndex))}
-          >
-            <i className="fa fa-minus-square" aria-hidden="true"></i> remove
-          </a>
-          <br />
-          <code className={plistStyles.hexCode}>&lt;{scaleResolution.decoded.hexStringSpaced}&gt;</code>
-        </li>
+          <div className="row">
+            <div className="col-2">
+              <input
+                type="checkbox"
+                name="decimal_hidpi"
+                onChange={this.handleResolutionInputChange}
+                data-index={scaleResolutionIndex}
+                checked={scaleResolution.decimal.hidpi}
+              />
+            </div>
+            <div className="col-7">
+              <input
+                className={classNames(plistStyles.resolutionField)}
+                type="text"
+                name="decimal_width"
+                value={scaleResolution.decimal.width}
+                onChange={this.handleResolutionInputChange}
+                data-index={scaleResolutionIndex}
+              />
+              &nbsp;
+              x
+              &nbsp;
+              <input
+                className={classNames(plistStyles.resolutionField)}
+                type="text"
+                name="decimal_height"
+                value={scaleResolution.decimal.height}
+                onChange={this.handleResolutionInputChange}
+                data-index={scaleResolutionIndex}
+              />
+            </div>
+            <div className="col-3 d-flex flex-row-reverse text-right">
+              <div>
+                <a
+                className={classNames(plistStyles.resolutionButton, plistStyles.resolutionButtonRemove)}
+                onClick={() => (this.deleteResolution(scaleResolutionIndex))}
+                >
+                <i className="fa fa-times" aria-hidden="true"></i>
+              </a>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-2"></div>
+            <div className="col-10">
+              <code className={plistStyles.hexCode}>&lt;{scaleResolution.decoded.hexStringSpaced}&gt;</code>
+            </div>
+          </div>
+        </div>
       );
     });
+
+
     const scaleResolutionWrapper = (
       <div>
-        <ul className={classNames(plistStyles.resolutionList)}>
-          <li className={classNames(plistStyles.resolutionListItem)}>
-            <a onClick={() => (this.addResolution())} className={plistStyles.resolutionButton}><i className="fa fa-plus-square" aria-hidden="true"></i> add new</a>
-          </li>
+        <div className={classNames(plistStyles.resolutionList)}>
+          <div className="row">
+            <div className={classNames(plistStyles.resolutionListHeading, "col-2")}>HiDPI</div>
+            <div className={classNames(plistStyles.resolutionListHeading, "col-7")}>Resolution</div>
+            <div className={classNames(plistStyles.resolutionListHeading, "col-3", "text-right")}>Remove</div>
+          </div>
           {scaleResolutions}
-        </ul>
+          <div className="row">
+            <div className="col-2"></div>
+            <div className={classNames(plistStyles.resolutionListItem, "col-8")}>
+              <a onClick={() => (this.addResolution())} className={plistStyles.resolutionButtonAdd}><i className="fa fa-plus" aria-hidden="true"></i> Add new</a>
+            </div>
+            <div className="col-2"></div>
+          </div>
+        </div>
       </div>);
-    const filePrefix = '/System/Library/Displays/Contents/Resources/Overrides/DisplayVendorID';
-    return (
-      <div>
-        <table className="table table-bordered">
-          <tbody>
-            <tr>
-              <td colSpan="2">
-                <p><strong>Display PropertyList Filename</strong></p>
-                <span className={plistStyles.filename}>{filePrefix}-{this.state.displayVendorIdHex}/DisplayProductID-{this.state.displayProductIdHex}</span>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row" style={{ width: '250px' }}>DisplayProductName</th>
-              <td>
-                <input
-                  className={classNames(plistStyles.field)}
-                  type="text"
-                  name="displayProductName"
-                  value={this.state.displayProductName}
-                  onChange={this.handleInputChange}
-                />
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">DisplayProductID</th>
-              <td className={classNames(plistStyles.hexColumn)}>
-                (0x<input
-                  className={classNames(plistStyles.hexField)}
-                  style={{ width: `${this.state.displayProductIdHex.length * 11}px` }}
-                  type="text"
-                  name="displayProductIdHex"
-                  value={this.state.displayProductIdHex}
-                  onChange={this.handleInputChange}
-                />)<sub>16</sub> = ({this.state.displayProductId})<sub>10</sub>
 
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">DisplayVendorID</th>
-              <td className={classNames(plistStyles.hexColumn)}>
-                (0x<input
-                  className={classNames(plistStyles.hexField)}
-                  style={{ width: `${this.state.displayVendorIdHex.length * 11}px` }}
-                  type="text"
-                  name="displayVendorIdHex"
-                  value={this.state.displayVendorIdHex}
-                  onChange={this.handleInputChange}
-                />)<sub>16</sub> = ({this.state.displayVendorId})<sub>10</sub>
-              </td>
-            </tr>
-            <tr>
-              <th>Scale Resolutions</th>
-              <td className={classNames(plistStyles.resolutionListTd)}>
-                {scaleResolutionWrapper}
-              </td>
-            </tr>
-          </tbody>
-        </table>
+
+
+    return (
+      <div className={classNames(plistStyles.resolutionBox)}>
+        <div className="row">
+          <div className="col-12">
+          <p className={classNames(plistStyles.resolutionSettingsHeading)}>DisplayProductName</p>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12">
+            <input
+              className={classNames(plistStyles.field)}
+              type="text"
+              name="displayProductName"
+              value={this.state.displayProductName}
+              onChange={this.handleInputChange}
+            />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12">
+            <p className={classNames(plistStyles.resolutionSettingsHeading)}>DisplayProductID</p>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12">
+            <div className={classNames(plistStyles.hexColumn)}>
+              (0x<input
+                className={classNames(plistStyles.hexField)}
+                style={{ width: `${this.state.displayProductIdHex.length * 11}px` }}
+                type="text"
+                name="displayProductIdHex"
+                value={this.state.displayProductIdHex}
+                onChange={this.handleInputChange}
+              />)<sub>16</sub> = ({this.state.displayProductId})<sub>10</sub>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12">
+            <p className={classNames(plistStyles.resolutionSettingsHeading)}>DisplayVendorID</p>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12">
+            <div className={classNames(plistStyles.hexColumn)}>
+              (0x<input
+                className={classNames(plistStyles.hexField)}
+                style={{ width: `${this.state.displayVendorIdHex.length * 11}px` }}
+                type="text"
+                name="displayVendorIdHex"
+                value={this.state.displayVendorIdHex}
+                onChange={this.handleInputChange}
+              />)<sub>16</sub> = ({this.state.displayVendorId})<sub>10</sub>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12">
+            <p className={classNames(plistStyles.resolutionSettingsHeading)}>Scale Resolutions</p>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12">
+            <div className={classNames(plistStyles.resolutionListTd)}>
+              {scaleResolutionWrapper}
+            </div>
+          </div>
+        </div>
+
+
       </div>
     );
   }
