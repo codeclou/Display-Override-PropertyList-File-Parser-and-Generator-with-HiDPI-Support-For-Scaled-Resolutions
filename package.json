@@ -66,8 +66,5 @@
     "redux": "3.5.2",
     "redux-form": "5.2.3",
     "whatwg-fetch": "1.0.0"
-  },
-  "pre-commit": [
-    "eslint"
-  ]
+  }
 }

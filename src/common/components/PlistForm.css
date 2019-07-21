@@ -1,67 +1,104 @@
 .filename {
-    -ms-word-break: break-all;
-    word-break: break-all;
-    word-break: break-word;
-    color:#555;
-    font-weight: 400;
-    font-size:16px;
-    font-family: 'Source Code Pro';
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  color: #555;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Source Code Pro";
 }
 .field {
-    width:100%;
-    padding:3px;
-    margin:5px;
-    border:0px;
-    background-color:#efefef;
+  width: 100%;
+  padding: 3px;
+  margin-top: 5px;
+  border: 0px;
+  color: #555;
+  font-size: 0.9rem;
+  background-color: #fff;
 }
 
 .hexField {
-    font-family: 'Source Code Pro';
-    width:50px;
-    border:0px;
-    background-color:#efefef;
+  font-family: "Source Code Pro";
+  width: 50px;
+  border: 0px;
+  color: #555;
+  font-size: 0.9rem;
+  background-color: #fff;
 }
 
 .hexColumn {
-    font-family: 'Source Code Pro';
+  font-family: "Source Code Pro";
+  color: #555;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+.resolutionBox {
+  background-color: #f4f5f7;
+  padding: 0px 20px 20px 20px;
+}
+.resolutionSettingsHeading {
+  margin-top: 20px;
+  margin-bottom: 0rem;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #272c34;
+}
+.resolutionListHeading {
+  text-transform: uppercase;
+  margin-top: 5px;
+  font-size: 0.7rem;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #999;
 }
 .resolutionListTd {
-    padding:0 !important;
+  padding: 0 !important;
 }
 .resolutionList {
-    list-style-type: none;
-    padding:0;
-    margin:0;
-}
-
-.resolutionListItem {
-    padding:10px;
-    border-bottom:1px solid #eceeef;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 .resolutionField {
-    font-family: 'Source Code Pro';
-    width:100px;
-    border:0px;
-    background-color:#efefef;
+  font-family: "Source Code Pro";
+  width: 73px;
+  border: 0px;
+  color: #555;
+  font-size: 0.9rem;
+  background-color: #fff;
 }
 .resolutionButton {
-    display:inline-block;
-    border: 1px solid #1e9fcc;
-    color: #1e9fcc;
-    padding:4px 8px 4px 8px;
-    cursor: pointer;
+  display: inline-block;
+  color: #555 !important;
+  padding: 0px 6px;
+  cursor: pointer;
+}
+.resolutionButtonAdd {
+  display: block;
+  font-size: 0.9rem;
+  background-color: #fff;
+  color: #555 !important;
+  padding: 4px 8px 4px 8px;
+  cursor: pointer;
+}
+.resolutionButtonAdd:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #d6dbe4;
 }
 .resolutionButtonRemove {
-    margin-left:20px;
+  margin-left: 0px;
 }
 .resolutionButton:hover {
-    text-decoration: none;
-    color:#fff;
-    background-color: #1e9fcc;
+  text-decoration: none;
+  color: #fff;
+  background-color: #d6dbe4;
 }
 .hexCode {
-    display:inline-block;
-    margin-top:10px;
-    color:#555;
-    background-color: #fff;
+  display: inline-block;
+  color: #555;
+  font-size: 0.8rem;
+  border: none;
+  padding: 0px;
+  margin-bottom: 10px;
 }

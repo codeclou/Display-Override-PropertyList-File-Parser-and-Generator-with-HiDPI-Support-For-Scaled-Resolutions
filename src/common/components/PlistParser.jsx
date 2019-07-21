@@ -33,7 +33,7 @@ class PlistParser extends React.Component {
       lineWrapping: true,
     };
     return (
-      <div style={{ height: '100%' }}>
+      <div>
         <Codemirror value={this.state.code} onChange={this.updateCode} options={codeMirrorOptions} />
       </div>
     );

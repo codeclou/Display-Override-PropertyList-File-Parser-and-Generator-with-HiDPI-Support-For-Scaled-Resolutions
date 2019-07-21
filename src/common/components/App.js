@@ -1,119 +1,217 @@
-import React, { Component } from 'react';
-import PlistContainer from './PlistContainer';
-import AspectRatioCalculator from './AspectRatioCalculator';
-import appStyles from './App.css';
-import classNames from 'classnames';
+import React, { Component } from "react";
+import PlistContainer from "./PlistContainer";
+import AspectRatioCalculator from "./AspectRatioCalculator";
+import appStyles from "./App.css";
+import classNames from "classnames";
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.foo = 'bar';
+    this.foo = "bar";
   }
 
   render() {
     return (
       <div>
-        <div className={appStyles.warning}>
-          <i className="fa fa-exclamation-triangle" aria-hidden="true" style={{ marginRight: '10px' }}></i>
-          <strong>This tool is provided without warranty</strong>. comSysto is not responsible for damages to your system.
-          It is heavily discouraged to edit files in <em>/System/</em> directory. You are doing it at your own risk.
-        </div>
-        <br /><br />
         <PlistContainer />
-
-        <br /><br />
+        <div className="my-5">&nbsp;</div>
         <hr />
-        <br /><br />
-        <div className="row">
-          <div className="col-md-12">
-            <h3>How to use Scale Resolutions</h3>
-
-            <h4 className={classNames(appStyles.numberedList, appStyles.numberedListFirst)}>Enable HiDPI Mode</h4>
-
-            <p><code>sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayResolutionEnabled -bool true</code></p>
-
-            <p>See the awesome <a href="http://www.tonymacx86.com/threads/adding-using-hidpi-custom-resolutions.133254/">tonymacx86.com forum</a> for more details.</p>
-
-            <h4 className={classNames(appStyles.numberedList, appStyles.numberedListSecond)}>Detect your Display</h4>
-
-            <p><code>ioreg -lw0 | grep IODisplayPrefsKey</code></p>
-
+        <div className={classNames("row", appStyles.howTo)}>
+          <div className="col-md-2" />
+          <div className="col-md-8">
+            <h3 className={appStyles.howtoHeaderH3}>
+              How to use Scale Resolutions
+            </h3>
+            <div className="text-center">
+              <p>
+                Follow the steps below to learn how to use Scale Resolutions.
+                See the awesome{" "}
+                <a href="http://www.tonymacx86.com/threads/adding-using-hidpi-custom-resolutions.133254/">
+                  tonymacx86.com forum
+                </a>{" "}
+                for more details.
+              </p>
+              <div className={appStyles.warning}>
+                <p>
+                  <i
+                    className="fa fa-exclamation-triangle"
+                    aria-hidden="true"
+                    style={{ marginRight: "10px" }}
+                  />
+                  <strong>This tool is provided without warranty</strong>.
+                  Comsysto Reply is not responsible for damages to your system.
+                  It is heavily discouraged to edit files in <em>/System/</em>{" "}
+                  directory. You are doing it at your own risk.
+                </p>
+              </div>
+            </div>
+            <h5
+              className={classNames(
+                appStyles.numberedList,
+                appStyles.numberedListFirst,
+                appStyles.howtoHeaderH5
+              )}
+            >
+              Enable HiDPI Mode
+            </h5>
             <p>
-              All external monitors are identified by <em>AppleDisplay</em> and internal monitors by <em>AppleBacklightDisplay</em>.
+              Open your terminal and copy/paste the following command to enable
+              HiDPI mode:
             </p>
-
-            <p>Example: When I run the command on my Mac the result is:</p>
-
+            <div className={appStyles.codeBox}>
+              sudo defaults write
+              /Library/Preferences/com.apple.windowserver.plist
+              DisplayResolutionEnabled -bool true
+            </div>
+            <h5
+              className={classNames(
+                appStyles.numberedList,
+                appStyles.numberedListSecond,
+                appStyles.howtoHeaderH5
+              )}
+            >
+              Detect your Display
+            </h5>
             <p>
-              <code>"IODisplayPrefsKey" = "IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/IGPU@2/AppleIntelFramebuffer@0/display0/AppleBacklightDisplay-610-a019"</code><br />
-              <code>"IODisplayPrefsKey" = "IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/IGPU@2/AppleIntelFramebuffer@2/display0/AppleDisplay-10ac-d06e"</code>
+              To detect your display copy/paste the following command into your
+              terminal:
+            </p>
+            <div className={appStyles.codeBox}>
+              ioreg -lw0 | grep IODisplayPrefsKey
+            </div>
+            <p>The output on a Mac should look like so:</p>
+            <div className={appStyles.codeBox}>
+              "IODisplayPrefsKey" =
+              "IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/IGPU@2/AppleIntelFramebuffer@0/display0/AppleBacklightDisplay-610-a019"
+              <br />
+              "IODisplayPrefsKey" =
+              "IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/IGPU@2/AppleIntelFramebuffer@2/display0/AppleDisplay-10ac-d06e"
+            </div>
+            <p>
+              All external monitors are identified by <em>AppleDisplay</em> and
+              internal monitors by <em>AppleBacklightDisplay</em>. So if you
+              want to set scale resolutions for your external monitor you will
+              need to look at the second line. Identify at the end of the line
+              your <strong>DisplayVendorId</strong> as <code>10ac</code> and
+              your <strong>DisplayProductID</strong> as <code>d06e</code> and
+              note these values. Now insert them into the corresponding input
+              fields on the top left and the generator will generate a basic
+              plist file for you.
+            </p>
+            <h5
+              className={classNames(
+                appStyles.numberedList,
+                appStyles.numberedListThird,
+                appStyles.howtoHeaderH5
+              )}
+            >
+              Customize your Resolutions
+            </h5>
+            <p>
+              Now you can customize the <strong>Scale Resolutions</strong>. For
+              example you could enter <strong>2560x1440</strong> and enable{" "}
+              <strong>HiDPI</strong>. Be aware that the generator does not do
+              any sanity checks for you, what you enter is just getting encoded.
+              Please be aware that depending on your monitor and internal
+              mac-checkups during startup some resolutions might not work.{" "}
+              <br />
+            </p>
+            <h5
+              className={classNames(
+                appStyles.numberedList,
+                appStyles.numberedListFourth,
+                appStyles.howtoHeaderH5
+              )}
+            >
+              Download plist and copy to System folder
+            </h5>
+            <p>
+              Once you have configured all your resolutions click the download
+              button. A file called <code>DisplayProductID-*.plist</code> will
+              download.
             </p>
             <p>
-              Since I want to set scale resolutions for my external monitor I need to look at the second line. At the end of the line
-              we identify <code>10ac</code> as <strong>DisplayVendorId</strong> and <code>d06e</code> as <strong>DisplayProductID</strong>.
+              Now copy this file to the destination that has been calculated on
+              the top right under <strong>Display PropertyList Filename</strong>
+              . Example for a DELL Monitor:
             </p>
-            <p>Note that values and insert it them the corresponding input fields on the top right and the generator will generate a basic plist file for you.</p>
-
-            <h4 className={classNames(appStyles.numberedList, appStyles.numberedListThird)}>Customize your resolutions</h4>
-
-            <p>Now you can customize the <strong>Scale Resolutions</strong>. Be aware that the generator does not do any sanity checks for you, what you enter is just getting encoded.</p>
-            <p>For example you could enter <strong>2560x1440</strong> and enable HiDPI.</p>
-
+            <div className={appStyles.codeBox}>
+              sudo cp ~/Downloads/DisplayProductID-d06e.plist
+              /System/Library/Displays/Contents/Resources/Overrides/DisplayVendorID-10ac/DisplayProductID-d06e
+            </div>
             <p>
-              Please be aware that depending on your monitor and internal mac-checkups during startup some resolutions might not work.
-              Again the <a href="http://www.tonymacx86.com/threads/adding-using-hidpi-custom-resolutions.133254/">tonymacx86.com forum</a> is a good place to ask questions.
+              <strong>NOTE:</strong> That you might need to{" "}
+              <a href="http://osxdaily.com/2015/10/05/disable-rootless-system-integrity-protection-mac-os-x/">
+                disable System Integrity Protection
+              </a>{" "}
+              (at your own risk) to copy files to <code>/System/</code>.
             </p>
-
-            <h4 className={classNames(appStyles.numberedList, appStyles.numberedListFourth)}>Download plist and copy to System folder</h4>
-
-            <p>Once you have configured all your resolutions click the download button. A file called <code>DisplayProductID-*.plist</code> will download.</p>
-            <p>Now copy this file to the destination that has been calculated on the top right.</p>
-
-            <p>Example for my DELL Monitor:</p>
-
+            <h5
+              className={classNames(
+                appStyles.numberedList,
+                appStyles.numberedListFifth,
+                appStyles.howtoHeaderH5
+              )}
+            >
+              Restart Mac and use Resolutions
+            </h5>
             <p>
-              <code>sudo cp ~/Downloads/DisplayProductID-d06e.plist /System/Library/Displays/Contents/Resources/Overrides/DisplayVendorID-10ac/DisplayProductID-d06e</code>
+              Now you can change your resolution to the ones you entered (if
+              macOS did not disable them during boot check-ups)
             </p>
-
             <p>
-              <strong>NOTE:</strong> That you might need
-              to <a href="http://osxdaily.com/2015/10/05/disable-rootless-system-integrity-protection-mac-os-x/">disable System Integrity Protection</a> (at
-              your own risk) to copy files to <code>/System/</code>.
+              A very handy{" "}
+              <a href="https://github.com/avibrazil/RDM">
+                tool to enable resolutions is RDM
+              </a>
+              .
+              <br />
+              If you are more into commandline tools you might like{" "}
+              <a href="https://github.com/jhford/screenresolution">
+                screenresolutions
+              </a>
+              .
+              <br />
+              And if you are willing to pay a small amount{" "}
+              <a href="http://www.madrau.com/">SwitchResX</a> is also a great
+              tool.
             </p>
-
-            <h4 className={classNames(appStyles.numberedList, appStyles.numberedListFifth)}>Restart Mac and use Resolutions</h4>
-
-            <p>Now you can change your resolution to the ones you entered (if macOS did not disable them during boot check-ups)</p>
-
-            <p>A very handy <a href="https://github.com/avibrazil/RDM">tool to enable resolutions is RDM</a>.</p>
-
-            <p>If you are more into commandline tools you might like <a href="https://github.com/jhford/screenresolution">screenresolutions</a>.</p>
-
-            <p>And if you are willing to pay a small amount <a href="http://www.madrau.com/">SwitchResX</a> is also a great tool.</p>
-
           </div>
-
-          <div className="col-md-12">
-            <br /><br />
-            <hr />
-            <br /><br />
-          </div>
+          <div className="col-md-2" />
         </div>
-        <div className="row" style={{ marginTop: '30px' }}>
-          <div className="col-md-6">
-            <h4>Aspect Ratio Calculator</h4>
+        <div className="row mt-5">
+          <div className="col-md-5 mt-5" style={{ backgroundColor: "#f4f5f7" }}>
+            <div className={appStyles.csBox}>
+              <h4>Aspect Ratio Calculator</h4>
 
-            <p>Use this calculator to calculcate horizontal and vertical resolution based on given Aspect Ratio.</p>
-
-            <AspectRatioCalculator />
+              <p>
+                Use this calculator to calculcate horizontal and vertical
+                resolution based on given Aspect Ratio.
+              </p>
+              <AspectRatioCalculator />
+            </div>
           </div>
-          <div className="col-md-6">
-            <h4>We hire you or you hire us!</h4>
-
-            <p>Looking for someone to write your React, AngularJS 1 or Angular 2 application?</p>
-            <p>Your search has come to an end. <a href="https://comsysto.com/leistungen">Check out our services</a>.</p>
-
-            <p>You are a developer yourself? <a href="https://comsysto.com/karriere">Checkout our openings</a>.</p>
+          <div className="col-sm-12 col-md-2">&nbsp;</div>
+          <div className="col-md-5 mt-5" style={{ backgroundColor: "#f4f5f7" }}>
+            <div className={appStyles.csBox}>
+              <h4>We hire you or you hire us!</h4>
+              <p>
+                Looking for someone to write your React or Angular application?
+              </p>
+              <p>
+                Your search has come to an end.{" "}
+                <a href="https://comsysto.com/leistungen">
+                  Check out our services
+                </a>
+                .<br />
+                You are a developer yourself?{" "}
+                <a href="https://comsysto.com/karriere">
+                  Checkout our openings
+                </a>
+                .
+              </p>
+              <p />
+            </div>
           </div>
         </div>
         {/*

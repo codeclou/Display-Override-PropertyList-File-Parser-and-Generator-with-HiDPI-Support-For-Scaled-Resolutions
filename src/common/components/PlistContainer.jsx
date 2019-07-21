@@ -51,10 +51,16 @@ export default class PlistContainer extends Component {
       xmlParseError: false,
     });
   }
-
+  getPlistFilename() {
+    return `DisplayProductID-${this.encHelp.intToHex(this.state.plist.displayProductId)}.plist`;
+  }
+  getFullPlistFilename() {
+    const filePrefix = '/System/Library/Displays/Contents/Resources/Overrides/DisplayVendorID';
+    return `${filePrefix}-${this.encHelp.intToHex(this.state.plist.displayProductId)}/DisplayProductID-${this.encHelp.intToHex(this.state.plist.displayProductId)}`;
+  }
   downloadPlistAsFile() {
     const textFileAsBlob = new Blob([this.state.plistXmlString], { type: 'text/plain' });
-    const fileNameToSaveAs = `DisplayProductID-${this.encHelp.intToHex(this.state.plist.displayProductId)}.plist`;
+    const fileNameToSaveAs = this.getPlistFilename();
 
     const downloadLink = document.createElement('a');
     downloadLink.download = fileNameToSaveAs;
@@ -85,7 +91,26 @@ export default class PlistContainer extends Component {
     }
     return (
       <div className="row">
-        <div className="col-md-6">
+        <div className={classNames("col-sm-12", "col-md-12", "col-lg-12", "col-xl-4")}>
+          <PlistForm
+            plist={this.state.plist}
+            handleChange={this.handlePlistFormChange}
+          />
+        </div>
+        <div className="col-sm-12 col-md-12 col-lg-12 col-xl-1"></div>
+        <div className="col-sm-12 col-md-12 col-lg-12 col-xl-7">
+          <div>
+            <div className="row">
+              <div className="col-12">
+                <p className={classNames(plistContainerStyles.resolutionSettingsHeading)}>Display PropertyList Filename</p>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-12">
+                <span className={classNames(plistContainerStyles.filename)}>{this.getFullPlistFilename()}</span>
+              </div>
+            </div>
+          </div>
           <div className={xmlNoticeClassNames}>
             {xmlNoticeMessage}
           </div>
@@ -95,7 +120,7 @@ export default class PlistContainer extends Component {
           />
 
           <div className={classNames('row', plistContainerStyles.buttonBarFooter)}>
-            <div className="col-md-4">
+            <div className="col-md-12 text-right">
               <a
                 className={plistContainerStyles.resetButton}
                 href="./"
@@ -103,12 +128,6 @@ export default class PlistContainer extends Component {
                 <i className="fa fa-times" aria-hidden="true"></i>&nbsp;
                 Reset Plist
               </a>
-            </div>
-            <div className="col-md-8 text-xs-right">
-              <span className={plistContainerStyles.downloadNote}>
-                (only Chrome and Firefox)&nbsp;
-              </span>
-
               <a
                 className={plistContainerStyles.downloadButton}
                 onClick={() => this.downloadPlistAsFile()}
@@ -116,14 +135,11 @@ export default class PlistContainer extends Component {
                 <i className="fa fa-download" aria-hidden="true"></i>&nbsp;
                 DisplayProductID-{this.encHelp.intToHex(this.state.plist.displayProductId)}
               </a>
+              <span className={plistContainerStyles.downloadNote}>
+                <br />(only Chrome and Firefox)&nbsp;
+              </span>
             </div>
           </div>
-        </div>
-        <div className="col-md-6">
-          <PlistForm
-            plist={this.state.plist}
-            handleChange={this.handlePlistFormChange}
-          />
         </div>
       </div>
     );
