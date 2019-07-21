@@ -2,7 +2,7 @@ const plistConstants = {
   plistXmlHeader: `<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">`,
-  plistXmlFooter: '</plist>',
+  plistXmlFooter: "</plist>",
   plistXmlString: `<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -28,17 +28,17 @@ const plistConstants = {
 </dict>
 </plist>`,
   defaultResolutionForAddNew: {
-    base64String: 'AAAFAAAAAtAAAAAB',
+    base64String: "AAAFAAAAAtAAAAABACAAAA==",
     decoded: {
-      decimalStringSpaced: '1280 720 1',
-      hexStringSpaced: '00000500 000002d0 00000001 00200000',
+      decimalStringSpaced: "1280 720 1",
+      hexStringSpaced: "00000500 000002d0 00000001 00200000"
     },
     decimal: {
-      width: '1280',
-      height: '720',
-      hidpi: true,
-    },
-  },
+      width: "1280",
+      height: "720",
+      hidpi: true
+    }
+  }
 };
 
 export default plistConstants;
