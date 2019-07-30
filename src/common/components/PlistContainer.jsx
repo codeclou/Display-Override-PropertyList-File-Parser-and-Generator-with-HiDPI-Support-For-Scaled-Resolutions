@@ -56,7 +56,7 @@ export default class PlistContainer extends Component {
   }
   getFullPlistFilename() {
     const filePrefix = '/System/Library/Displays/Contents/Resources/Overrides/DisplayVendorID';
-    return `${filePrefix}-${this.encHelp.intToHex(this.state.plist.displayProductId)}/DisplayProductID-${this.encHelp.intToHex(this.state.plist.displayProductId)}`;
+    return `${filePrefix}-${this.encHelp.intToHex(this.state.plist.displayVendorId)}/DisplayProductID-${this.encHelp.intToHex(this.state.plist.displayProductId)}`;
   }
   downloadPlistAsFile() {
     const textFileAsBlob = new Blob([this.state.plistXmlString], { type: 'text/plain' });
