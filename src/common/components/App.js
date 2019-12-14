@@ -146,6 +146,11 @@ class App extends Component {
               </a>{" "}
               (at your own risk) to copy files to <code>/System/</code>.
             </p>
+            <p>
+              <strong>NOTE:</strong> On Mac OS Catalina systems, the <code>/System/</code> folder is mounted read-only, so
+              you may need to temporarily remount the file system as writable 
+              before copying the downloaded file as follows: <code>sudo mount -uw /</code>.  This lasts until the next reboot.
+            </p>
             <h5
               className={classNames(
                 appStyles.numberedList,
