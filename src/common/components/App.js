@@ -144,12 +144,16 @@ class App extends Component {
               <a href="http://osxdaily.com/2015/10/05/disable-rootless-system-integrity-protection-mac-os-x/">
                 disable System Integrity Protection
               </a>{" "}
-              (at your own risk) to copy files to <code>/System/</code>.
+              (at your own risk) to copy files to <code>/System/</code>. If you are
+              running macOS Catalina or above, see the note below.
             </p>
             <p>
-              <strong>NOTE:</strong> On Mac OS Catalina systems, the <code>/System/</code> folder is mounted read-only, so
-              you may need to temporarily remount the file system as writable 
-              before copying the downloaded file as follows: <code>sudo mount -uw /</code>.  This lasts until the next reboot.
+            <p>
+              <strong>NOTE:</strong> On macOS Catalina systems (or{" "}
+              <a href="https://developer.apple.com/forums/thread/649832">above</a>),
+              the <code>/System/</code> folder is mounted read-only, so instead you
+              should copy the file to <code>/Library/Displays/Contents/Resources/Overrides/DisplayVendorID-10ac/DisplayProductID-d06e</code>.
+              This can be done without disabling System Integrity Protection.
             </p>
             <h5
               className={classNames(
