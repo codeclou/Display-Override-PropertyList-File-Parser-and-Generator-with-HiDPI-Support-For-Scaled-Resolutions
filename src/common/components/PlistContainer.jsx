@@ -267,8 +267,7 @@ export default class PlistContainer extends Component {
                 under <strong>Display PropertyList Filename</strong>. Example for a DELL Monitor:
               </p>
               <div className={appStyles.codeBox}>
-                sudo cp
-                {`~/Downloads/DisplayProductID-${this.encHelp.intToHex(
+                {`sudo cp ~/Downloads/DisplayProductID-${this.encHelp.intToHex(
                   this.state.plist.displayProductId,
                 )}.plist `}
                 {`/System/Library/Displays/Contents/Resources/Overrides/DisplayVendorID-${this.encHelp.intToHex(
