@@ -25,7 +25,7 @@
   color: #dd4a68 !important;
 }
 /* bootstrap overrides */
-#app {
+.inner-app {
   margin: 100px 15px;
 }
 p {

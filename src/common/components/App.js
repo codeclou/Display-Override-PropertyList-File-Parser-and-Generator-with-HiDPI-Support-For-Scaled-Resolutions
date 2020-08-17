@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PlistContainer from "./PlistContainer";
 import AspectRatioCalculator from "./AspectRatioCalculator";
-import appStyles from "./App.css";
+import appStyles from "./App.module.css";
 import classNames from "classnames";
 
 class App extends Component {
@@ -12,14 +12,41 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <>
+      <div className="container-fluid cs-header">
+        <div className="cs-header-inner">
+          <div className="row">
+            <div className="col-xl-2"></div>
+            <div className="col-sm-12 col-md-4 col-xl-3 d-flex justify-content-center">
+            <div className="cs-header__logo">
+              <img src="./assets/images/logo-scaled-resolutions.svg" className="text-center" style={{maxWidth: '300px'}} alt="Scaled Resolutions your MacBooks external Monitor" />
+              </div>
+            </div>
+
+            <div className="col-sm-12 col-md-8 col-xl-5">
+              <h1 className="cs-header__h1">Scaled Resolutions</h1>
+              <h2 className="cs-header__h2">for your MacBooks external Monitor</h2>
+              <h4 className="cs-header__h4">Display Override PropertyList File Parser and Generator with HiDPI support</h4>
+              <div className="cs-header__star">
+                <a href="https://github.com/comsysto/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions" className="cs-header__starlink" target="_blank">
+                star on github</a>
+              </div>
+            </div>
+            <div className="col-xl-2">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div className="container-fluid cs-body inner-app">
+
         <PlistContainer />
         <div className="my-5">&nbsp;</div>
         <hr />
         <div className={classNames("row", appStyles.howTo)}>
           <div className="col-md-2" />
           <div className="col-md-8">
-            <h3 className={appStyles.howtoHeaderH3}>
+            <h3 className={'howtoHeaderH3'}>
               How to use Scale Resolutions
             </h3>
             <div className="text-center">
@@ -148,7 +175,6 @@ class App extends Component {
               running macOS Catalina or above, see the note below.
             </p>
             <p>
-            <p>
               <strong>NOTE:</strong> On macOS Catalina systems (or{" "}
               <a href="https://developer.apple.com/forums/thread/649832">above</a>),
               the <code>/System/</code> folder is mounted read-only, so instead you
@@ -240,6 +266,42 @@ class App extends Component {
           </p>
         </div>*/}
       </div>
+
+
+
+
+          <div className="container-fluid cs-footer">
+            <div className="cs-footer-inner">
+              <div className="row">
+                <div className="col-md-4"></div>
+                <div className="col-md-4 text-center">
+                  <strong>Made with love and
+                  <a href="https://facebook.github.io/react/">
+                    React
+                  </a>
+                    by </strong>
+                  <br />
+                  <a href="https://comsysto.com"><img src="./assets/images/comsysto-logo.png" alt="Comsysto Reply"
+                  style={{width:'200px'}}/></a>
+                </div>
+                <div className="col-md-4"></div>
+              </div>
+              <div className="row">
+                <div className="col-md-4"></div>
+                <div className="col-md-4 d-flex justify-content-center">
+                    <a href="https://legal.comsysto.com/comsysto.github.io/de/impressum/">
+                      <span style={{fontSsize:'0.8rem'}}>Imprint</span>
+                    </a>
+                    &nbsp;&nbsp;&nbsp;
+                    <a href="https://legal.comsysto.com/comsysto.github.io/de/datenschutz/">
+                      <span style={{fontSsize:'0.8rem'}}>Data Privacy Statement</span>
+                    </a>
+                </div>
+                <div className="col-md-4"></div>
+              </div>
+            </div>
+          </div>
+          </>
     );
   }
 }

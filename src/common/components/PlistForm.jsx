@@ -1,8 +1,9 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import CharsetAndEncodingHelper from './CharsetAndEncodingHelper';
 import XmlParser from './XmlParser';
 import plistConstants from './PlistConstants';
-import plistStyles from './PlistForm.css';
+import plistStyles from './PlistForm.module.css';
 import classNames from 'classnames';
 import alertify from 'alertify.js';
 alertify.logPosition('top right');

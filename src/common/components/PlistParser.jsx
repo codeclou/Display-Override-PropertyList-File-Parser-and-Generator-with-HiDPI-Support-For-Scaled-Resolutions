@@ -1,8 +1,9 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import alertify from 'alertify.js';
-alertify.logPosition('top right');
 import Codemirror from 'react-codemirror';
 import 'codemirror/mode/xml/xml';
+alertify.logPosition('top right');
 
 class PlistParser extends React.Component {
   constructor(props) {

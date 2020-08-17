@@ -5,7 +5,7 @@ import plistConstants from './PlistConstants';
 import PlistForm from './PlistForm';
 import XmlParser from './XmlParser';
 import CharsetAndEncodingHelper from './CharsetAndEncodingHelper';
-import plistContainerStyles from './PlistContainer.css';
+import plistContainerStyles from './PlistContainer.module.css';
 import classNames from 'classnames';
 
 export default class PlistContainer extends Component {

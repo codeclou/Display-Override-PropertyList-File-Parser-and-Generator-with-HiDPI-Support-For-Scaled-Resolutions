@@ -1,5 +1,5 @@
 import React from 'react';
-import ratioStyles from './AspectRatioCalculator.css';
+import ratioStyles from './AspectRatioCalculator.module.css';
 import classNames from 'classnames';
 
 export default class AspectRatioCalculator extends React.Component {

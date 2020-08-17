@@ -1,24 +1,23 @@
-# Build
-build/app.js
-build/style.css
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Logs
-logs
-*.log
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
 
-# Coverage directory used by tools like nyc
-.nyc_output
-coverage
+# testing
+/coverage
 
-# Compiled binary addons (http://nodejs.org/api/addons.html)
-build/Release
+# production
+/build
 
-# Dependency directory
-node_modules
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-# Users Environment Variables
-.lock-wscript
-
-.idea
-yarn.lock
-package-lock.json
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
