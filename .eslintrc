@@ -1,6 +1,0 @@
-{
-  "extends": "airbnb",
-  "rules": {
-    "max-len": [ 2, 200 ]
-  }
-}
