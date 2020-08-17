@@ -7,9 +7,14 @@ import XmlParser from './XmlParser';
 import CharsetAndEncodingHelper from './CharsetAndEncodingHelper';
 import plistContainerStyles from './PlistContainer.module.css';
 import classNames from 'classnames';
+import {
+  IoIosCloudDownload,
+  IoMdTrash,
+  IoIosCloseCircle,
+  IoIosCheckmarkCircle,
+} from 'react-icons/io';
 
 export default class PlistContainer extends Component {
-
   constructor(props) {
     super(props);
     this.handlePlistParserChange = this.handlePlistParserChange.bind(this);
@@ -56,7 +61,9 @@ export default class PlistContainer extends Component {
   }
   getFullPlistFilename() {
     const filePrefix = '/System/Library/Displays/Contents/Resources/Overrides/DisplayVendorID';
-    return `${filePrefix}-${this.encHelp.intToHex(this.state.plist.displayVendorId)}/DisplayProductID-${this.encHelp.intToHex(this.state.plist.displayProductId)}`;
+    return `${filePrefix}-${this.encHelp.intToHex(
+      this.state.plist.displayVendorId,
+    )}/DisplayProductID-${this.encHelp.intToHex(this.state.plist.displayProductId)}`;
   }
   downloadPlistAsFile() {
     const textFileAsBlob = new Blob([this.state.plistXmlString], { type: 'text/plain' });
@@ -71,7 +78,7 @@ export default class PlistContainer extends Component {
     } else {
       /* FIREFOX */
       downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
-      downloadLink.onclick = (event) => (document.body.removeChild(event.target));
+      downloadLink.onclick = (event) => document.body.removeChild(event.target);
       downloadLink.style.display = 'none';
       document.body.appendChild(downloadLink);
     }
@@ -85,58 +92,67 @@ export default class PlistContainer extends Component {
     });
     let xmlNoticeMessage;
     if (this.state.xmlParseError) {
-      xmlNoticeMessage = <span><i className="fa fa-exclamation-triangle fa-fw" aria-hidden="true"></i> xml invalid</span>;
+      xmlNoticeMessage = (
+        <span>
+          <IoIosCloseCircle /> xml invalid
+        </span>
+      );
     } else {
-      xmlNoticeMessage = <span><i className="fa fa-check-square fa-fw" aria-hidden="true"></i> xml valid</span>;
+      xmlNoticeMessage = (
+        <span>
+          <IoIosCheckmarkCircle /> xml valid
+        </span>
+      );
     }
     return (
       <div className="row">
-        <div className={classNames("col-sm-12", "col-md-12", "col-lg-12", "col-xl-4")}>
-          <PlistForm
-            plist={this.state.plist}
-            handleChange={this.handlePlistFormChange}
-          />
+        <div className={classNames('col-sm-12', 'col-md-12', 'col-lg-12', 'col-xl-4')}>
+          <PlistForm plist={this.state.plist} handleChange={this.handlePlistFormChange} />
         </div>
         <div className="col-sm-12 col-md-12 col-lg-12 col-xl-1"></div>
         <div className="col-sm-12 col-md-12 col-lg-12 col-xl-7">
           <div>
             <div className="row">
               <div className="col-12">
-                <p className={classNames(plistContainerStyles.resolutionSettingsHeading)}>Display PropertyList Filename</p>
+                <p className={classNames(plistContainerStyles.resolutionSettingsHeading)}>
+                  Display PropertyList Filename
+                </p>
               </div>
             </div>
             <div className="row">
               <div className="col-12">
-                <span className={classNames(plistContainerStyles.filename)}>{this.getFullPlistFilename()}</span>
+                <span className={classNames(plistContainerStyles.filename)}>
+                  {this.getFullPlistFilename()}
+                </span>
               </div>
             </div>
           </div>
-          <div className={xmlNoticeClassNames}>
-            {xmlNoticeMessage}
-          </div>
+          <div className={xmlNoticeClassNames}>{xmlNoticeMessage}</div>
           <PlistParser
             plistXmlString={this.state.plistXmlString}
-            handleChangeFromParent={this.handlePlistParserChange}
+            updatePlistXmlString={this.handlePlistParserChange}
           />
 
           <div className={classNames('row', plistContainerStyles.buttonBarFooter)}>
             <div className="col-md-12 text-right">
-              <a
-                className={plistContainerStyles.resetButton}
-                href="./"
-              >
-                <i className="fa fa-times" aria-hidden="true"></i>&nbsp;
-                Reset Plist
+              <a className={plistContainerStyles.resetButton} href="./">
+                <IoMdTrash /> Reset Plist
               </a>
               <a
                 className={plistContainerStyles.downloadButton}
-                onClick={() => this.downloadPlistAsFile()}
+                href="#download"
+                onClick={(e) => {
+                  e.preventDefault();
+                  this.downloadPlistAsFile();
+                }}
               >
-                <i className="fa fa-download" aria-hidden="true"></i>&nbsp;
-                DisplayProductID-{this.encHelp.intToHex(this.state.plist.displayProductId)}
+                <IoIosCloudDownload />
+                &nbsp;
+                {'DisplayProductID-' + this.encHelp.intToHex(this.state.plist.displayProductId)}
               </a>
               <span className={plistContainerStyles.downloadNote}>
-                <br />(only Chrome and Firefox)&nbsp;
+                <br />
+                (only Chrome and Firefox)
               </span>
             </div>
           </div>

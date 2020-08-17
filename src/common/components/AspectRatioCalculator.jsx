@@ -3,7 +3,6 @@ import ratioStyles from './AspectRatioCalculator.module.css';
 import classNames from 'classnames';
 
 export default class AspectRatioCalculator extends React.Component {
-
   constructor(props) {
     super(props);
     this.recalculate = this.recalculate.bind(this);
@@ -46,7 +45,8 @@ export default class AspectRatioCalculator extends React.Component {
                   name="ratioWidth"
                   value={this.state.ratioWidth}
                   onChange={this.recalculate}
-                /> :
+                />{' '}
+                :
                 <input
                   className={classNames(ratioStyles.field)}
                   type="text"
