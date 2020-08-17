@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1e63a8df47d503c36ab5e3a92dd94fa1",
+    "revision": "d31fe30b66968bfbd9a8aa312fe50e2a",
     "url": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/index.html"
   },
   {
-    "revision": "4d49efefe9211a25070d",
+    "revision": "99f409c2939e68224969",
     "url": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/css/2.fcdf98cf.chunk.css"
   },
   {
-    "revision": "f906774aaaa4b28a3c00",
-    "url": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/css/main.7fd33d29.chunk.css"
+    "revision": "9acf0943e2151a819387",
+    "url": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/css/main.1db460c2.chunk.css"
   },
   {
-    "revision": "4d49efefe9211a25070d",
-    "url": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/js/2.958d81eb.chunk.js"
+    "revision": "99f409c2939e68224969",
+    "url": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/js/2.d2e69dd2.chunk.js"
   },
   {
     "revision": "209edf4585d9f58f9ad6afde7880261f",
-    "url": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/js/2.958d81eb.chunk.js.LICENSE.txt"
+    "url": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/js/2.d2e69dd2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f906774aaaa4b28a3c00",
-    "url": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/js/main.e8740030.chunk.js"
+    "revision": "9acf0943e2151a819387",
+    "url": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/js/main.6641a137.chunk.js"
   },
   {
     "revision": "dc8ef5d634d5dab1ec25",
