@@ -1,27 +1,26 @@
 {
   "files": {
     "main.css": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/css/main.1db460c2.chunk.css",
-    "main.js": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/js/main.d493106a.chunk.js",
-    "main.js.map": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/js/main.d493106a.chunk.js.map",
+    "main.js": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/js/main.2e54ec48.chunk.js",
+    "main.js.map": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/js/main.2e54ec48.chunk.js.map",
     "runtime-main.js": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/js/runtime-main.d556b9dd.js",
     "runtime-main.js.map": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/js/runtime-main.d556b9dd.js.map",
     "static/css/2.fcdf98cf.chunk.css": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/css/2.fcdf98cf.chunk.css",
-    "static/js/2.d2e69dd2.chunk.js": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/js/2.d2e69dd2.chunk.js",
-    "static/js/2.d2e69dd2.chunk.js.map": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/js/2.d2e69dd2.chunk.js.map",
+    "static/js/2.7599f910.chunk.js": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/js/2.7599f910.chunk.js",
+    "static/js/2.7599f910.chunk.js.map": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/js/2.7599f910.chunk.js.map",
     "index.html": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/index.html",
-    "precache-manifest.a5057039fa5ded6b168b8b3df316da27.js": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/precache-manifest.a5057039fa5ded6b168b8b3df316da27.js",
+    "precache-manifest.d2cd34282bce051c161a644888419237.js": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/precache-manifest.d2cd34282bce051c161a644888419237.js",
     "service-worker.js": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/service-worker.js",
     "static/css/2.fcdf98cf.chunk.css.map": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/css/2.fcdf98cf.chunk.css.map",
     "static/css/main.1db460c2.chunk.css.map": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/css/main.1db460c2.chunk.css.map",
-    "static/js/2.d2e69dd2.chunk.js.LICENSE.txt": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/js/2.d2e69dd2.chunk.js.LICENSE.txt",
-    "static/media/comsysto-logo.png": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/media/comsysto-logo.d2343032.png",
+    "static/js/2.7599f910.chunk.js.LICENSE.txt": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/js/2.7599f910.chunk.js.LICENSE.txt",
     "static/media/logo-scaled-resolutions.svg": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/media/logo-scaled-resolutions.64f60ba8.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.d556b9dd.js",
     "static/css/2.fcdf98cf.chunk.css",
-    "static/js/2.d2e69dd2.chunk.js",
+    "static/js/2.7599f910.chunk.js",
     "static/css/main.1db460c2.chunk.css",
-    "static/js/main.d493106a.chunk.js"
+    "static/js/main.2e54ec48.chunk.js"
   ]
 }
