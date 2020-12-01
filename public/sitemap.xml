@@ -3,10 +3,10 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
     <url>
-        <loc>https://comsysto.github.io/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/</loc>
+        <loc>https://codeclou.github.io/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/</loc>
         <image:image>
-            <image:loc>https://comsysto.github.io/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/assets/images/opengraph-github-scaled-resolutions.png</image:loc>
-            <image:caption>Scaled Resolutions for your MacBooks external monitor by Comsysto Reply</image:caption>
+            <image:loc>https://codeclou.github.io/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/assets/images/opengraph-github-scaled-resolutions.png</image:loc>
+            <image:caption>Scaled Resolutions for your MacBooks external monitor by codeclou</image:caption>
         </image:image>
         <lastmod>2019-07-21</lastmod>
         <changefreq>monthly</changefreq>

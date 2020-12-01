@@ -182,7 +182,7 @@ export default class PlistContainer extends Component {
                   </div>
                   <div>
                     <p>
-                      <strong>This tool is provided without warranty</strong>. Comsysto Reply is not
+                      <strong>This tool is provided without warranty</strong>. codeclou is not
                       responsible for damages to your system. It is heavily discouraged to edit
                       files in <em>/System/</em> directory. You are doing it at your own risk.
                     </p>

@@ -3,7 +3,6 @@ import PlistContainer from './PlistContainer';
 import AspectRatioCalculator from './AspectRatioCalculator';
 import appStyles from './App.module.css';
 import logo from './img/logo-scaled-resolutions.svg';
-import comsystoLogo from './img/comsysto-logo.png';
 import { IoIosStarOutline, IoIosHeart } from 'react-icons/io';
 
 class App extends Component {
@@ -38,7 +37,7 @@ class App extends Component {
                 </h4>
                 <div className="cs-header__star">
                   <a
-                    href="https://github.com/comsysto/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions"
+                    href="https://github.com/codeclou/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions"
                     className="cs-header__starlink"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -70,14 +69,8 @@ class App extends Component {
               <div className="col-sm-12 col-md-2">&nbsp;</div>
               <div className="col-md-5 mt-5" style={{ backgroundColor: '#f4f5f7' }}>
                 <div className={appStyles.csBox}>
-                  <h4>We hire you or you hire us!</h4>
-                  <p>Looking for someone to write your React or Angular application?</p>
-                  <p>
-                    Your search has come to an end.{' '}
-                    <a href="https://comsysto.com/leistungen">Check out our services</a>
-                    .<br />
-                    You are a developer yourself?{' '}
-                    <a href="https://comsysto.com/karriere">Checkout our openings</a>.
+                  <h4>We like code!</h4>
+                  <p>...
                   </p>
                   <p />
                 </div>
@@ -95,8 +88,8 @@ class App extends Component {
                   by
                 </strong>
                 <br />
-                <a href="https://comsysto.com">
-                  <img src={comsystoLogo} alt="Comsysto Reply" style={{ width: '200px' }} />
+                <a href="https://codeclou.io">
+                  codeclou UG
                 </a>
               </div>
               <div className="col-md-4"></div>
@@ -104,11 +97,11 @@ class App extends Component {
             <div className="row">
               <div className="col-md-4"></div>
               <div className="col-md-4 d-flex justify-content-center">
-                <a href="https://legal.comsysto.com/comsysto.github.io/de/impressum/">
+                <a href="https://codeclou.io/legal/impressum-en/">
                   <span style={{ fontSsize: '0.8rem' }}>Imprint</span>
                 </a>
                 &nbsp;&nbsp;&nbsp;
-                <a href="https://legal.comsysto.com/comsysto.github.io/de/datenschutz/">
+                <a href="https://codeclou.io/legal/datenschutz-en/">
                   <span style={{ fontSsize: '0.8rem' }}>Data Privacy Statement</span>
                 </a>
               </div>

@@ -5,14 +5,14 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/comsysto/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions.git"
+    "url": "https://github.com/codeclou/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions.git"
   },
   "author": "Bernhard Grünewaldt",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/comsysto"
+    "url": "https://github.com/codeclou"
   },
-  "homepage": "https://comsysto.github.io/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/",
+  "homepage": "https://codeclou.github.io/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
