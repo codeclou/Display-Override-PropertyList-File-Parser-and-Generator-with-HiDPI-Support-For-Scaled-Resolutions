@@ -71,3 +71,9 @@
   white-space: nowrap;
   margin-bottom: 0.5rem;
 }
+.bigSurMessage {
+  color: #fff;
+  background-color: rgb(208, 47, 47);
+  padding: 20px;
+  text-align: center;
+}

@@ -46,11 +46,11 @@ class App extends Component {
                   </a>
                 </div>
               </div>
-              <div className="col-xl-2"></div>
+              <div className="col-xl-2"></div>            
             </div>
           </div>
         </div>
-
+        <div className={appStyles.bigSurMessage}>This solutions does not work with macOS Big Sur.</div>
         <div className="container-fluid cs-body">
           <div className={appStyles.app}>
             <PlistContainer />
