@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/css/main.1db460c2.chunk.css",
-    "main.js": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/js/main.2e54ec48.chunk.js",
-    "main.js.map": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/js/main.2e54ec48.chunk.js.map",
+    "main.css": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/css/main.acc4d090.chunk.css",
+    "main.js": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/js/main.767b5ce8.chunk.js",
+    "main.js.map": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/js/main.767b5ce8.chunk.js.map",
     "runtime-main.js": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/js/runtime-main.d556b9dd.js",
     "runtime-main.js.map": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/js/runtime-main.d556b9dd.js.map",
     "static/css/2.fcdf98cf.chunk.css": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/css/2.fcdf98cf.chunk.css",
     "static/js/2.7599f910.chunk.js": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/js/2.7599f910.chunk.js",
     "static/js/2.7599f910.chunk.js.map": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/js/2.7599f910.chunk.js.map",
     "index.html": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/index.html",
-    "precache-manifest.d2cd34282bce051c161a644888419237.js": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/precache-manifest.d2cd34282bce051c161a644888419237.js",
+    "precache-manifest.370926478de787cae6f897029130a12a.js": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/precache-manifest.370926478de787cae6f897029130a12a.js",
     "service-worker.js": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/service-worker.js",
     "static/css/2.fcdf98cf.chunk.css.map": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/css/2.fcdf98cf.chunk.css.map",
-    "static/css/main.1db460c2.chunk.css.map": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/css/main.1db460c2.chunk.css.map",
+    "static/css/main.acc4d090.chunk.css.map": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/css/main.acc4d090.chunk.css.map",
     "static/js/2.7599f910.chunk.js.LICENSE.txt": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/js/2.7599f910.chunk.js.LICENSE.txt",
     "static/media/logo-scaled-resolutions.svg": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/media/logo-scaled-resolutions.64f60ba8.svg"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.d556b9dd.js",
     "static/css/2.fcdf98cf.chunk.css",
     "static/js/2.7599f910.chunk.js",
-    "static/css/main.1db460c2.chunk.css",
-    "static/js/main.2e54ec48.chunk.js"
+    "static/css/main.acc4d090.chunk.css",
+    "static/js/main.767b5ce8.chunk.js"
   ]
 }
