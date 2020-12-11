@@ -50,7 +50,7 @@ class App extends Component {
             </div>
           </div>
         </div>
-        <div className={appStyles.bigSurMessage}>This solutions does not work with macOS Big Sur.</div>
+        <div className={appStyles.bigSurMessage}>This solution might not work with macOS Big Sur. We do not provide end user support.</div>
         <div className="container-fluid cs-body">
           <div className={appStyles.app}>
             <PlistContainer />
