@@ -292,7 +292,13 @@ export default class PlistContainer extends Component {
                     this.state.plist.displayVendorId,
                   )}/DisplayProductID-${this.encHelp.intToHex(this.state.plist.displayProductId)}`}
                 </code>
-                . This can be done without disabling System Integrity Protection.
+                . This can be done without disabling System Integrity Protection. If the file path 
+                does not exist, create it with{' '}
+                <code>
+                  {`sudo mkdir -p /Library/Displays/Contents/Resources/Overrides/DisplayVendorID-${this.encHelp.intToHex(
+                    this.state.plist.displayVendorId,
+                  )}`}
+                </code>
               </p>
               <h5
                 className={classNames(
