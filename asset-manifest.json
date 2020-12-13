@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/css/main.acc4d090.chunk.css",
+    "main.css": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/css/main.ea27eeb8.chunk.css",
     "main.js": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/js/main.91905d55.chunk.js",
     "main.js.map": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/js/main.91905d55.chunk.js.map",
     "runtime-main.js": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/js/runtime-main.d556b9dd.js",
@@ -9,10 +9,10 @@
     "static/js/2.7599f910.chunk.js": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/js/2.7599f910.chunk.js",
     "static/js/2.7599f910.chunk.js.map": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/js/2.7599f910.chunk.js.map",
     "index.html": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/index.html",
-    "precache-manifest.474780300474be2d0876edf1edc42484.js": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/precache-manifest.474780300474be2d0876edf1edc42484.js",
+    "precache-manifest.2660981c3c56adc943a47a985ac7862a.js": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/precache-manifest.2660981c3c56adc943a47a985ac7862a.js",
     "service-worker.js": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/service-worker.js",
     "static/css/2.fcdf98cf.chunk.css.map": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/css/2.fcdf98cf.chunk.css.map",
-    "static/css/main.acc4d090.chunk.css.map": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/css/main.acc4d090.chunk.css.map",
+    "static/css/main.ea27eeb8.chunk.css.map": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/css/main.ea27eeb8.chunk.css.map",
     "static/js/2.7599f910.chunk.js.LICENSE.txt": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/js/2.7599f910.chunk.js.LICENSE.txt",
     "static/media/logo-scaled-resolutions.svg": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/media/logo-scaled-resolutions.64f60ba8.svg"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.d556b9dd.js",
     "static/css/2.fcdf98cf.chunk.css",
     "static/js/2.7599f910.chunk.js",
-    "static/css/main.acc4d090.chunk.css",
+    "static/css/main.ea27eeb8.chunk.css",
     "static/js/main.91905d55.chunk.js"
   ]
 }

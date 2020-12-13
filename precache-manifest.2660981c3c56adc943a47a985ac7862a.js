@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "afa4a428170c2272c8ddf6e4b7576d4c",
+    "revision": "c0606263e31df1c7f57d6a22165ffc5c",
     "url": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/css/2.fcdf98cf.chunk.css"
   },
   {
-    "revision": "7fce57fd2da31c61a5fa",
-    "url": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/css/main.acc4d090.chunk.css"
+    "revision": "f94232119da70529cbe0",
+    "url": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/css/main.ea27eeb8.chunk.css"
   },
   {
     "revision": "6edf837c3947ac762d29",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/js/2.7599f910.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7fce57fd2da31c61a5fa",
+    "revision": "f94232119da70529cbe0",
     "url": "/Display-Override-PropertyList-File-Parser-and-Generator-with-HiDPI-Support-For-Scaled-Resolutions/static/js/main.91905d55.chunk.js"
   },
   {
