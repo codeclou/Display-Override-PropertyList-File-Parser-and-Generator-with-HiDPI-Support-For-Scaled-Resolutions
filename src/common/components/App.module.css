@@ -64,12 +64,18 @@
   border-radius: 2px;
   border: 1px solid rgba(0, 0, 0, 0.05);
   color: #555;
-  font-family: 'Source Code Pro';
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
   background-color: #f4f5f7;
   overflow: auto;
   font-size: 0.9rem;
-  white-space: nowrap;
   margin-bottom: 0.5rem;
+  white-space: nowrap;
+}
+@media (max-width: 768px) {
+  .codeBox {
+    white-space: normal;
+    word-break: break-word;
+  }
 }
 .bigSurMessage {
   color: #fff;

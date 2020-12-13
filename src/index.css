@@ -31,11 +31,12 @@ p {
 }
 code {
   color: #555;
-  font-family: 'Source Code Pro';
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
   background-color: #f4f5f7;
   padding: 3px 8px;
   border-radius: 2px;
   border: 1px solid rgba(0, 0, 0, 0.05);
+  word-break: break-word;
 }
 
 /* cs Styles */
@@ -86,13 +87,15 @@ body {
   text-align: center;
 }
 .cs-header__h2 {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+    'Helvetica Neue', sans-serif;
   font-weight: 300;
   text-align: center;
 }
 .cs-header__h4 {
   margin-top: 10px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+    'Helvetica Neue', sans-serif;
   font-weight: 300;
   font-size: 1.3rem;
   text-align: center;
