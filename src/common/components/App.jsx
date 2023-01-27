@@ -89,7 +89,7 @@ class App extends Component {
                   by
                 </strong>
                 <br />
-                <a href="https://codeclou.io">codeclou UG</a>
+                <a href="https://codeclou.io">codeclou GmbH</a>
               </div>
               <div className="col-md-4"></div>
             </div>
@@ -101,7 +101,7 @@ class App extends Component {
                 </a>
                 &nbsp;&nbsp;&nbsp;
                 <a href="https://codeclou.io/legal/en/privacy/github-pages">
-                  <span style={{ fontSsize: '0.8rem' }}>Data Privacy Statement</span>
+                  <span style={{ fontSsize: '0.8rem' }}>Data Privacy</span>
                 </a>
               </div>
               <div className="col-md-4"></div>
