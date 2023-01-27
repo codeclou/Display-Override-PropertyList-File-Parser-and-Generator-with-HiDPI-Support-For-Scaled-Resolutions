@@ -46,11 +46,13 @@ class App extends Component {
                   </a>
                 </div>
               </div>
-              <div className="col-xl-2"></div>            
+              <div className="col-xl-2"></div>
             </div>
           </div>
         </div>
-        <div className={appStyles.bigSurMessage}>This solution might not work with macOS Big Sur. We do not provide end user support.</div>
+        <div className={appStyles.bigSurMessage}>
+          This solution might not work with macOS Big Sur. We do not provide end user support.
+        </div>
         <div className="container-fluid cs-body">
           <div className={appStyles.app}>
             <PlistContainer />
@@ -70,8 +72,7 @@ class App extends Component {
               <div className="col-md-5 mt-5" style={{ backgroundColor: '#f4f5f7' }}>
                 <div className={appStyles.csBox}>
                   <h4>We like code!</h4>
-                  <p>...
-                  </p>
+                  <p>...</p>
                   <p />
                 </div>
               </div>
@@ -88,20 +89,18 @@ class App extends Component {
                   by
                 </strong>
                 <br />
-                <a href="https://codeclou.io">
-                  codeclou UG
-                </a>
+                <a href="https://codeclou.io">codeclou UG</a>
               </div>
               <div className="col-md-4"></div>
             </div>
             <div className="row">
               <div className="col-md-4"></div>
               <div className="col-md-4 d-flex justify-content-center">
-                <a href="https://codeclou.io/legal/impressum-en/">
+                <a href="https://codeclou.io/legal/en/imprint">
                   <span style={{ fontSsize: '0.8rem' }}>Imprint</span>
                 </a>
                 &nbsp;&nbsp;&nbsp;
-                <a href="https://codeclou.io/legal/datenschutz-en/">
+                <a href="https://codeclou.io/legal/en/privacy/github-pages">
                   <span style={{ fontSsize: '0.8rem' }}>Data Privacy Statement</span>
                 </a>
               </div>
